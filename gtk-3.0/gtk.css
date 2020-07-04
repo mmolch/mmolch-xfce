@@ -6468,30 +6468,22 @@ read if you used those and something break with a version upgrade you're on your
 
 .xfce4-panel.background wnck-pager {
   background-color: #f7f7f7;
-  color: #f7f7f7;
-  border: none;
-  outline: none;
 }
 
 .xfce4-panel.background wnck-pager > * {
   //background-color: #dddddd;
   border: 1px solid #878787;
+  color: #dddddd;
 }
 
 .xfce4-panel.background wnck-pager:hover {
   background-color: #eeeeee;
+  color: #eeeeee;
 }
 
 .xfce4-panel.background wnck-pager:selected {
   background-color: #cccccc;
-  border: 2px solid #0a84ff;
-}
-
-.xfce4-panel.background > * > button > *, 
-.xfce4-panel.background > * > * > button > *,
-.xfce4-panel.background > * > * > * > button > *{
-  margin-left: 0;
-  margin-right: 0;
+  color: #0a84ff;
 }
 
 .xfce4-panel.background button {
@@ -6510,12 +6502,10 @@ read if you used those and something break with a version upgrade you're on your
 transition: all 150ms ease-out;
 }
 
-#sn-button,
 .xfce4-panel.background button > * {
   padding-top: 2px;
 }
 
-.xfce4-panel.background #sn-button:checked,
 .xfce4-panel.background button:checked {
   border-radius: 0;
   border-bottom: 2px solid #0a84ff;
@@ -6524,15 +6514,14 @@ transition: all 150ms ease-out;
 transition: all 150ms ease-out;
 }
 
-.xfce4-panel.background #sn-button:hover,
 .xfce4-panel.background button:hover {
   border-radius: 0;
   border-bottom: 2px solid #0a84ff;
+  background-color: #eaeaea;
   background-image: none;
 transition: all 150ms ease-out;
 }
 
-.xfce4-panel.background #sn-button:active,
 .xfce4-panel.background button:active {
   border-radius: 0;
   //border-bottom: 2px solid #0a84ff;
@@ -6540,12 +6529,53 @@ transition: all 150ms ease-out;
 transition: all 150ms ease-out;
 }
 
+.xfce4-panel.background button:hover:checked {
+  border-radius: 0;
+  border-bottom: 2px solid #0a84ff;
+  background-color: #d0d0d0;
+  background-image: none;
+transition: all 150ms ease-out;
+}
+
+
+/****************
+ * whisker menu *
+ ****************/
+window.xfce4-panel button#whiskermenu-button {
+}
+
+window.xfce4-panel button#whiskermenu-button > box {
+}
+
+window.xfce4-panel button#whiskermenu-button > box > image {
+}
+
+window.xfce4-panel button#whiskermenu-button > box > label {
+}
+
+
 /****************
  * tasklist *
  ****************/
-.xfce4-panel.background .tasklist > button > * > label {
-  color: black;
+window.xfce4-panel widget.tasklist {
 }
+
+window.xfce4-panel widget.tasklist > button {
+}
+
+window.xfce4-panel widget.tasklist > button > box {
+}
+
+window..xfce4-panel widget.tasklist > button > box > image {
+}
+
+window..xfce4-panel widget.tasklist > button > box > image.minimized {
+}
+
+window.xfce4-panel widget.tasklist > button > box > label {
+}
+
+
 
 .xfce4-panel.background .tasklist > button {
   //border: none;
@@ -6598,7 +6628,93 @@ transition: all 150ms ease-out;
 
 }
 
-#sn-button > * > * {
+
+
+#showdesktop-button {
   padding-top: 2px;
+}
+
+/****************
+ * Notifications *
+ ****************/
+window.xfce4-panel button#xfce4-notification-plugin {
+}
+
+window.xfce4-panel button#xfce4-notification-plugin:hover {
+}
+
+window.xfce4-panel button#xfce4-notification-plugin:checked {
+}
+
+window.xfce4-panel button#xfce4-notification-plugin > box {
+}
+
+window.xfce4-panel button#xfce4-notification-plugin > box > image {
+}
+
+window.xfce4-panel button#xfce4-notification-plugin > box > label {
+}
+
+/****************
+ * Power Manager *
+ ****************/
+window.xfce4-panel button#xfce4-power-manager-plugin {
+}
+
+window.xfce4-panel button#xfce4-power-manager-plugin:hover {
+}
+
+window.xfce4-panel button#xfce4-power-manager-plugin:checked {
+}
+
+window.xfce4-panel button#xfce4-power-manager-plugin > box {
+}
+
+window.xfce4-panel button#xfce4-power-manager-plugin > box > image {
+}
+
+window.xfce4-panel button#xfce4-power-manager-plugin > box > label {
+}
+
+
+/****************
+ * Status Notification Buttons *
+ ****************/
+window.xfce4-panel button#sn-button {
+  transition: all 150ms ease-out;
+}
+
+window.xfce4-panel button#sn-button:hover {
+}
+
+window.xfce4-panel button#sn-button:checked {
+}
+
+window.xfce4-panel button#sn-button > widget#sn-button-box {
+
+}
+
+window.xfce4-panel button#sn-button > widget#sn-button-box > image {
+  padding-top: 2px;
+}
+
+window.xfce4-panel button#sn-button:hover > widget#sn-button-box > image {
+  transition: all 150ms ease-out;
+  border-bottom: 1px solid #0a84ff;
+}
+
+/****************
+ * Pulseaudio Button *
+ ****************/
+window.xfce4-panel button#pulseaudio-button {
+}
+
+window.xfce4-panel button#pulseaudio-button:hover {
+}
+
+window.xfce4-panel button#pulseaudio-button:checked {
+}
+
+window.xfce4-panel button#pulseaudio-button > image {
 }
 

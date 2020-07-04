@@ -6005,6 +6005,8 @@ read if you used those and something break with a version upgrade you're on your
   border: none;
   margin: 0;
   padding: 0;
+  min-height: 2px;
+  min-width: 2px;
   border-bottom: 2px solid transparent;
   background-image: none;
 transition: all 150ms ease-out;
@@ -6059,6 +6061,24 @@ window.xfce4-panel button#whiskermenu-button > box > image {
 }
 
 window.xfce4-panel button#whiskermenu-button > box > label {
+}
+
+window#whiskermenu-window > frame > stack {
+  padding: 4px;
+}
+
+window#whiskermenu-window > frame > stack > box > box {
+}
+
+window#whiskermenu-window > frame > stack > box > box > widget {
+  color: @theme_bg_color;
+}
+
+window#whiskermenu-window > frame > stack > box > box > widget > image {
+}
+
+/* Category buttons */
+window#whiskermenu-window viewport button {
 }
 
 
@@ -6167,6 +6187,7 @@ window.xfce4-panel button#xfce4-notification-plugin > box > label {
  * Power Manager *
  ****************/
 window.xfce4-panel button#xfce4-power-manager-plugin {
+  transition: all 150ms ease-out;
 }
 
 window.xfce4-panel button#xfce4-power-manager-plugin:hover {
@@ -6182,6 +6203,9 @@ window.xfce4-panel button#xfce4-power-manager-plugin > box > image {
 }
 
 window.xfce4-panel button#xfce4-power-manager-plugin > box > label {
+}
+
+window.xfce4-panel button#xfce4-power-manager-plugin:hover > box > image {
 }
 
 
