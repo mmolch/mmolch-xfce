@@ -5991,7 +5991,7 @@ read if you used those and something break with a version upgrade you're on your
 
 .xfce4-panel.background wnck-pager:selected {
   background-color: #cccccc;
-  color: #0a84ff;
+  color: @theme_selected_bg_color;
 }
 
 .xfce4-panel.background button {
@@ -6018,7 +6018,7 @@ transition: all 150ms ease-out;
 
 .xfce4-panel.background button:checked {
   border-radius: 0;
-  border-bottom: 2px solid #0a84ff;
+  border-bottom: 2px solid @theme_selected_bg_color;
   background-color: #dbdbdb;
   background-image: none;
 transition: all 150ms ease-out;
@@ -6026,7 +6026,7 @@ transition: all 150ms ease-out;
 
 .xfce4-panel.background button:hover {
   border-radius: 0;
-  border-bottom: 2px solid #0a84ff;
+  border-bottom: 2px solid @theme_selected_bg_color;
   background-color: #eaeaea;
   background-image: none;
 transition: all 150ms ease-out;
@@ -6034,14 +6034,14 @@ transition: all 150ms ease-out;
 
 .xfce4-panel.background button:active {
   border-radius: 0;
-  //border-bottom: 2px solid #0a84ff;
+  //border-bottom: 2px solid @theme_selected_bg_color;
   background-image: none;
 transition: all 150ms ease-out;
 }
 
 .xfce4-panel.background button:hover:checked {
   border-radius: 0;
-  border-bottom: 2px solid #0a84ff;
+  border-bottom: 2px solid @theme_selected_bg_color;
   background-color: #d0d0d0;
   background-image: none;
 transition: all 150ms ease-out;
@@ -6124,11 +6124,11 @@ window.xfce4-panel widget.tasklist > button > box > label {
 }
 
 .xfce4-panel.background .tasklist > button:hover {
-  border-bottom: 2px solid #0a84ff;
+  border-bottom: 2px solid @theme_selected_bg_color;
 }
 
 .xfce4-panel.background .tasklist > button:checked {
-  border-bottom: 2px solid #0a84ff;
+  border-bottom: 2px solid @theme_selected_bg_color;
 }
 
 .xfce4-panel.background .tasklist > button > * > label {
@@ -6232,7 +6232,7 @@ window.xfce4-panel button#sn-button > widget#sn-button-box > image {
 
 window.xfce4-panel button#sn-button:hover > widget#sn-button-box > image {
   transition: all 150ms ease-out;
-  border-bottom: 1px solid #0a84ff;
+  border-bottom: 1px solid @theme_selected_bg_color;
 }
 
 /****************
