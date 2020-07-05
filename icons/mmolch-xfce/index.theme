@@ -1,0 +1,14 @@
+[Icon Theme]
+Name=mmolch-xfce
+Comment=
+Inherits=Yaru,Humanity,hicolor
+Example=folder
+
+Directories=scalable/actions
+
+[scalable/actions]
+Size=8
+MinSize=8
+MaxSize=256
+Context=Actions
+Type=Scalable

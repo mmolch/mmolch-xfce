@@ -6010,6 +6010,7 @@ read if you used those and something break with a version upgrade you're on your
   border-bottom: 2px solid transparent;
   background-image: none;
 transition: all 150ms ease-out;
+  color: @theme_fg_color;
 }
 
 .xfce4-panel.background button > * {
@@ -6228,6 +6229,9 @@ window.xfce4-panel button#sn-button > widget#sn-button-box {
 
 window.xfce4-panel button#sn-button > widget#sn-button-box > image {
   padding-top: 2px;
+  -gtk-icon-style: symbolic;
+  -gtk-icon-palette: warning rgb(61,61,61), success rgb(61,61,61), error rgb(61,61,61);
+  -gtk-icon-effect: none;
 }
 
 window.xfce4-panel button#sn-button:hover > widget#sn-button-box > image {
@@ -6250,3 +6254,105 @@ window.xfce4-panel button#pulseaudio-button:checked {
 window.xfce4-panel button#pulseaudio-button > image {
 }
 
+window.xfce4-panel > widget > widget#separator-1,
+window.xfce4-panel > widget > widget#separator-2,
+window.xfce4-panel > widget > widget#separator-3,
+window.xfce4-panel > widget > widget#separator-4,
+window.xfce4-panel > widget > widget#separator-5,
+window.xfce4-panel > widget > widget#separator-6,
+window.xfce4-panel > widget > widget#separator-7,
+window.xfce4-panel > widget > widget#separator-8,
+window.xfce4-panel > widget > widget#separator-9,
+window.xfce4-panel > widget > widget#separator-10,
+window.xfce4-panel > widget > widget#separator-11,
+window.xfce4-panel > widget > widget#separator-12,
+window.xfce4-panel > widget > widget#separator-13,
+window.xfce4-panel > widget > widget#separator-14,
+window.xfce4-panel > widget > widget#separator-15,
+window.xfce4-panel > widget > widget#separator-16,
+window.xfce4-panel > widget > widget#separator-17,
+window.xfce4-panel > widget > widget#separator-18,
+window.xfce4-panel > widget > widget#separator-19,
+window.xfce4-panel > widget > widget#separator-20,
+window.xfce4-panel > widget > widget#separator-21,
+window.xfce4-panel > widget > widget#separator-22,
+window.xfce4-panel > widget > widget#separator-23,
+window.xfce4-panel > widget > widget#separator-24,
+window.xfce4-panel > widget > widget#separator-25,
+window.xfce4-panel > widget > widget#separator-26,
+window.xfce4-panel > widget > widget#separator-27,
+window.xfce4-panel > widget > widget#separator-28,
+window.xfce4-panel > widget > widget#separator-29,
+window.xfce4-panel > widget > widget#separator-30,
+window.xfce4-panel > widget > widget#separator-31,
+window.xfce4-panel > widget > widget#separator-32,
+window.xfce4-panel > widget > widget#separator-33,
+window.xfce4-panel > widget > widget#separator-34,
+window.xfce4-panel > widget > widget#separator-35,
+window.xfce4-panel > widget > widget#separator-36,
+window.xfce4-panel > widget > widget#separator-37,
+window.xfce4-panel > widget > widget#separator-38,
+window.xfce4-panel > widget > widget#separator-39,
+window.xfce4-panel > widget > widget#separator-40,
+window.xfce4-panel > widget > widget#separator-41,
+window.xfce4-panel > widget > widget#separator-42,
+window.xfce4-panel > widget > widget#separator-43,
+window.xfce4-panel > widget > widget#separator-44,
+window.xfce4-panel > widget > widget#separator-45,
+window.xfce4-panel > widget > widget#separator-46,
+window.xfce4-panel > widget > widget#separator-47,
+window.xfce4-panel > widget > widget#separator-48,
+window.xfce4-panel > widget > widget#separator-49,
+window.xfce4-panel > widget > widget#separator-50,
+window.xfce4-panel > widget > widget#separator-51,
+window.xfce4-panel > widget > widget#separator-52,
+window.xfce4-panel > widget > widget#separator-53,
+window.xfce4-panel > widget > widget#separator-54,
+window.xfce4-panel > widget > widget#separator-55,
+window.xfce4-panel > widget > widget#separator-56,
+window.xfce4-panel > widget > widget#separator-57,
+window.xfce4-panel > widget > widget#separator-58,
+window.xfce4-panel > widget > widget#separator-59,
+window.xfce4-panel > widget > widget#separator-60,
+window.xfce4-panel > widget > widget#separator-61,
+window.xfce4-panel > widget > widget#separator-62,
+window.xfce4-panel > widget > widget#separator-63,
+window.xfce4-panel > widget > widget#separator-64,
+window.xfce4-panel > widget > widget#separator-65,
+window.xfce4-panel > widget > widget#separator-66,
+window.xfce4-panel > widget > widget#separator-67,
+window.xfce4-panel > widget > widget#separator-68,
+window.xfce4-panel > widget > widget#separator-69,
+window.xfce4-panel > widget > widget#separator-70,
+window.xfce4-panel > widget > widget#separator-71,
+window.xfce4-panel > widget > widget#separator-72,
+window.xfce4-panel > widget > widget#separator-73,
+window.xfce4-panel > widget > widget#separator-74,
+window.xfce4-panel > widget > widget#separator-75,
+window.xfce4-panel > widget > widget#separator-76,
+window.xfce4-panel > widget > widget#separator-77,
+window.xfce4-panel > widget > widget#separator-78,
+window.xfce4-panel > widget > widget#separator-79,
+window.xfce4-panel > widget > widget#separator-80,
+window.xfce4-panel > widget > widget#separator-81,
+window.xfce4-panel > widget > widget#separator-82,
+window.xfce4-panel > widget > widget#separator-83,
+window.xfce4-panel > widget > widget#separator-84,
+window.xfce4-panel > widget > widget#separator-85,
+window.xfce4-panel > widget > widget#separator-86,
+window.xfce4-panel > widget > widget#separator-87,
+window.xfce4-panel > widget > widget#separator-88,
+window.xfce4-panel > widget > widget#separator-89,
+window.xfce4-panel > widget > widget#separator-90,
+window.xfce4-panel > widget > widget#separator-91,
+window.xfce4-panel > widget > widget#separator-92,
+window.xfce4-panel > widget > widget#separator-93,
+window.xfce4-panel > widget > widget#separator-94,
+window.xfce4-panel > widget > widget#separator-95,
+window.xfce4-panel > widget > widget#separator-96,
+window.xfce4-panel > widget > widget#separator-97,
+window.xfce4-panel > widget > widget#separator-98,
+window.xfce4-panel > widget > widget#separator-99,
+window.xfce4-panel > widget > widget#separator-100 {
+  opacity: 0.3;
+}
