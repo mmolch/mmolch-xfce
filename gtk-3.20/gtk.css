@@ -6160,13 +6160,13 @@ window.xfce4-panel widget.tasklist > button > box > label {
   padding-right: 6px;
 }
 
-#indicator-button {
-  -GtkWidget-focus-padding: 0;
-  -GtkWidget-focus-line-width: 0;
-  -GtkButton-default-border: 0;
-  -GtkButton-inner-border: 0;
-  padding-top: 2px;
-  border-width: 1px;
+.xfce4-panel.background button#indicator-button {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.xfce4-panel.background button#indicator-button > widget#indicator-button-box > * {
+  padding-top: 3px;
 }
 
 .xfce4-panel.background button {
