@@ -5974,27 +5974,29 @@ read if you used those and something break with a version upgrade you're on your
 @define-color wm_button_active_color_c shade(#F7F7F7, 0.9);
 @define-color content_view_bg #ffffff;
 
-.xfce4-panel.background wnck-pager {
+window.xfce4-panel wnck-pager {
   background-color: #f7f7f7;
 }
 
-.xfce4-panel.background wnck-pager > * {
-  //background-color: #dddddd;
+window.xfce4-panel wnck-pager > * {
   border: 1px solid #878787;
   color: #dddddd;
 }
 
-.xfce4-panel.background wnck-pager:hover {
+window.xfce4-panel wnck-pager:hover {
   background-color: #eeeeee;
   color: #eeeeee;
 }
 
-.xfce4-panel.background wnck-pager:selected {
+window.xfce4-panel wnck-pager:selected {
   background-color: #cccccc;
   color: @theme_selected_bg_color;
 }
 
-.xfce4-panel.background button {
+window.xfce4-panel > widget > widget > box > widget.tasklist > button,
+window.xfce4-panel > widget > button,
+window.xfce4-panel > widget > widget > button,
+window.xfce4-panel > widget > widget > * > button {
   outline: none;
   -gtk-icon-effect: none;
   -gtk-icon-shadow: none;
@@ -6013,39 +6015,53 @@ transition: all 150ms ease-out;
   color: @theme_fg_color;
 }
 
-.xfce4-panel.background button > * {
+window.xfce4-panel > widget > widget > box > widget.tasklist > button > *,
+window.xfce4-panel > widget > button > *,
+window.xfce4-panel > widget > widget > button > *,
+window.xfce4-panel > widget > widget > * > button > * {
   padding-top: 2px;
 }
 
-.xfce4-panel.background button:checked {
+window.xfce4-panel > widget > widget > box > widget.tasklist > button:checked,
+window.xfce4-panel > widget > button:checked,
+window.xfce4-panel > widget > widget > button:checked,
+window.xfce4-panel > widget > widget > * > button:checked {
   border-radius: 0;
   border-bottom: 2px solid @theme_selected_bg_color;
   background-color: #dbdbdb;
   background-image: none;
-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
 }
 
-.xfce4-panel.background button:hover {
+window.xfce4-panel > widget > widget > box > widget.tasklist > button:hover,
+window.xfce4-panel > widget > button:hover,
+window.xfce4-panel > widget > widget > button:hover,
+window.xfce4-panel > widget > widget > * > button:hover {
   border-radius: 0;
   border-bottom: 2px solid @theme_selected_bg_color;
   background-color: #eaeaea;
   background-image: none;
-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
 }
 
-.xfce4-panel.background button:active {
+window.xfce4-panel > widget > widget > box > widget.tasklist > button:active,
+window.xfce4-panel > widget > button:active,
+window.xfce4-panel > widget > widget > button:active,
+window.xfce4-panel > widget > widget > * > button:active {
   border-radius: 0;
-  //border-bottom: 2px solid @theme_selected_bg_color;
   background-image: none;
-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
 }
 
-.xfce4-panel.background button:hover:checked {
+window.xfce4-panel > widget > widget > box > widget.tasklist > button:hover:checked,
+window.xfce4-panel > widget > button:hover:checked,
+window.xfce4-panel > widget > widget > button:hover:checked,
+window.xfce4-panel > widget > widget > * > button:hover:checked {
   border-radius: 0;
   border-bottom: 2px solid @theme_selected_bg_color;
   background-color: #d0d0d0;
   background-image: none;
-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
 }
 
 
@@ -6095,10 +6111,10 @@ window.xfce4-panel widget.tasklist > button {
 window.xfce4-panel widget.tasklist > button > box {
 }
 
-window..xfce4-panel widget.tasklist > button > box > image {
+window.xfce4-panel widget.tasklist > button > box > image {
 }
 
-window..xfce4-panel widget.tasklist > button > box > image.minimized {
+window.xfce4-panel widget.tasklist > button > box > image.minimized {
 }
 
 window.xfce4-panel widget.tasklist > button > box > label {
