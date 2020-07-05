@@ -1566,6 +1566,21 @@ style "menubar_item" {
 
 style "menu" {
 
+  engine "pixmap" {
+
+    ###########
+    # Buttons #
+    ###########
+
+    image {
+      function = BOX
+      state    = NORMAL
+      file     = "assets/menu-border.png"
+      border   = {1, 1, 1, 1}
+      stretch  = TRUE
+    }
+  }
+
   xthickness = 0
   ythickness = 0
 
@@ -1577,6 +1592,21 @@ style "menu" {
 }
 
 style "menu_item" {
+
+  engine "pixmap" {
+
+    ###########
+    # Buttons #
+    ###########
+
+    image {
+      function = BOX
+      state    = PRELIGHT
+      file     = "assets/menu-item-hover.png"
+      border   = {1, 1, 0, 0}
+      stretch  = TRUE
+    }
+  }
 
   xthickness = 3
   ythickness = 4
@@ -1813,7 +1843,9 @@ style "separator_menu_item" {
   engine "pixmap" {
     image {
       function = BOX
-      file     = "assets/line.png"
+      file     = "assets/menu-item-separator.png"
+      border   = {1, 1, 0, 0}
+      stretch  = TRUE
     }
   }
 
