@@ -6128,7 +6128,7 @@ window.xfce4-panel widget.tasklist > button > box > label {
   margin-right: 1px;
   border: 0;
   border-radius: 0;
-  border-bottom: 2px solid transparent;
+  border-bottom: 2px solid #898989;
 }
 
 .xfce4-panel.background .tasklist > button > * {
