@@ -6123,12 +6123,9 @@ window.xfce4-panel widget.tasklist > button > box > label {
 
 
 .xfce4-panel.background .tasklist > button {
-  //border: none;
-  //outline: none;
   padding: 0;
   margin-left: 0;
   margin-right: 1px;
-  //color: white;
   border: 0;
   border-radius: 0;
   border-bottom: 2px solid transparent;
@@ -6175,9 +6172,41 @@ window.xfce4-panel widget.tasklist > button > box > label {
 
 
 
-#showdesktop-button {
-  padding-top: 2px;
+window.xfce4-panel > widget > widget > #showdesktop-button {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background-color: #c0c0c0;
+  border-left: 1px solid #ffffff;
 }
+
+window.xfce4-panel > widget > widget > #showdesktop-button:hover {
+  background-color: #a0a0a0;
+}
+
+window.xfce4-panel > widget > widget > #showdesktop-button:checked {
+  background-color: @theme_selected_bg_color;
+}
+
+window.xfce4-panel > widget > widget > #showdesktop-button:checked:hover {
+  background-color: #1a75bf;
+}
+
+
+window.xfce4-panel > widget > widget > #showdesktop-button > image {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  -gtk-icon-style: symbolic;
+}
+
+window.xfce4-panel > widget > widget > #showdesktop-button:hover > image {
+}
+
+window.xfce4-panel > widget > widget > #showdesktop-button:checked > image {
+  color: white;
+}
+
 
 /****************
  * Notifications *
@@ -6371,4 +6400,12 @@ window.xfce4-panel > widget > widget#separator-98,
 window.xfce4-panel > widget > widget#separator-99,
 window.xfce4-panel > widget > widget#separator-100 {
   opacity: 0.3;
+}
+
+window.xfce4-panel > widget > widget > button#clock-button {
+}
+
+window.xfce4-panel > widget > widget > button#clock-button > label {
+  padding-left: 8px;
+  padding-right: 8px;
 }
