@@ -4548,21 +4548,26 @@ infobar {
  * Tooltips *
  ************/
 tooltip {
-  padding: 4px;
-  /* not working */
-  border-radius: 5px;
+  border: 1px solid #c4c4c4;
   box-shadow: none;
-  text-shadow: 0 1px black; }
-  tooltip.background {
-    background-color: rgba(0, 0, 0, 0.8);
-    background-clip: padding-box;
-    border: 1px solid rgba(255, 255, 255, 0.1); }
-  tooltip decoration {
-    background-color: transparent; }
-  tooltip * {
-    padding: 4px;
-    background-color: transparent;
-    color: white; }
+  text-shadow: none;
+}
+
+tooltip > *{
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+tooltip.background {
+  background-clip: padding-box;
+}
+
+tooltip decoration {
+  background-color: transparent;
+}
+
+tooltip * {
+}
 
 /*****************
  * Color Chooser *
