@@ -6085,12 +6085,25 @@ window.xfce4-panel button#whiskermenu-button > box > image {
 window.xfce4-panel button#whiskermenu-button > box > label {
 }
 
+window#whiskermenu-window button {
+
+}
+
+window#whiskermenu-window button:hover {
+  transition: none;
+}
+
 window#whiskermenu-window > frame > stack {
   padding: 4px;
 }
 
 window#whiskermenu-window > frame > stack > box > box {
 }
+
+window#whiskermenu-window > frame > stack > box > box {
+  /*font-style: italic;*/
+}
+
 
 window#whiskermenu-window > frame > stack > box > box > widget {
   color: @theme_bg_color;
