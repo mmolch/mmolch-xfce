@@ -20,8 +20,8 @@ style "default" {
   GtkToolbar::internal-padding = 4
   GtkToolButton::icon-spacing  = 4
 
-  GtkWidget::tooltip-radius    = 3
-  GtkWidget::tooltip-alpha     = 235
+  GtkWidget::tooltip-radius    = 0
+  GtkWidget::tooltip-alpha     = 255
   GtkWidget::new-tooltip-style = 1 #for compatibility
 
   GtkWidget::link-color              = @link_color
@@ -133,10 +133,6 @@ style "default" {
   base[ACTIVE]      = @selected_bg_color
 
   # For succinctness, all reasonable pixmap options remain here
-
-  # Draw frame around menu in a non-compositied environment
-  # This needs to go before pixmap because we need to override some stuff
-  engine "adwaita" {}
 
   engine "pixmap" {
 
@@ -2541,14 +2537,12 @@ style "inline_toolbar" {
 }
 
 style "tooltip" {
+  xthickness = 8
+  ythickness = 8
 
-  xthickness = 13
-  ythickness = 13
-
-  bg[NORMAL]   = @tooltip_bg_color
-  fg[NORMAL]   = @tooltip_fg_color
-  bg[SELECTED] = @tooltip_bg_color
-
+  bg[NORMAL]   = @bg_color
+  fg[NORMAL]   = @fg_color
+  bg[SELECTED] = @bg_color
 }
 
 style "disable_separator" {
