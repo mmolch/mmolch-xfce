@@ -5980,6 +5980,10 @@ read if you used those and something break with a version upgrade you're on your
 @define-color wm_button_active_color_c shade(#F7F7F7, 0.9);
 @define-color content_view_bg #ffffff;
 
+window.xfce4-panel {
+  background-color: #f7f7f7;
+}
+
 window.xfce4-panel wnck-pager {
   background-color: #f7f7f7;
 }
@@ -6115,7 +6119,19 @@ window#whiskermenu-window > frame > stack > box > box > widget > image {
 }
 
 /* Category buttons */
-window#whiskermenu-window viewport button {
+window#whiskermenu-window button {
+    border-radius: 0;
+}
+
+window#whiskermenu-window entry {
+    border-radius: 0;
+}
+
+window#whiskermenu-window entry:focus {
+    border: 1px solid @theme_selected_bg_color;
+    outline: 0;
+    box-shadow: none;
+    border-radius: 0;
 }
 
 

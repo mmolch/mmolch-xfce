@@ -1,7 +1,7 @@
 [Icon Theme]
 Name=mmolch-xfce
 Comment=
-Inherits=breeze,elementary-xfce,ubuntu-mono-light,Adwaita,Humanity,hicolor
+Inherits=breeze,Yaru,elementary-xfce,ubuntu-mono-light,Adwaita,Humanity,hicolor
 Example=folder
 
 Directories=scalable/actions
