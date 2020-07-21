@@ -5975,7 +5975,8 @@ read if you used those and something break with a version upgrade you're on your
 @define-color content_view_bg #ffffff;
 
 window.xfce4-panel {
-  background-color: #f7f7f7;
+  background-color: rgba(253,254,255,0.95);
+  background: rgba(253,254,255,0.95);
 }
 
 window.xfce4-panel wnck-pager {
@@ -6017,6 +6018,8 @@ window.xfce4-panel > widget > widget > * > button {
   background-image: none;
 transition: all 150ms ease-out;
   color: @theme_fg_color;
+  background-color: rgba(0,0,0,0);
+  background: rgba(0,0,0,0);
 }
 
 window.xfce4-panel > widget > widget > box > widget.tasklist > button > *,
@@ -6182,8 +6185,8 @@ window.xfce4-panel widget.tasklist > button > box > label {
  * Launchers *
  ****************/
 .xfce4-panel.background button#launcher-arrow > * {
-  padding-left: 6px;
-  padding-right: 6px;
+  padding-left: 7px;
+  padding-right: 7px;
 }
 
 .xfce4-panel.background button#indicator-button {
@@ -6438,3 +6441,4 @@ window.xfce4-panel > widget > widget > button#clock-button > label {
   padding-left: 8px;
   padding-right: 8px;
 }
+
