@@ -1,34 +1,41 @@
 [Icon Theme]
 Name=mmolch-xfce
 Comment=
-Inherits=breeze,Yaru,ubuntu-mono-light,Humanity,elementary-xfce,Adwaita,hicolor
+Inherits=breeze,Yaru,Humanity,Adwaita,hicolor
 Example=folder
 
-Directories=actions/scalable,emblems/scalable,places/scalable,status/scalable
+Directories=actions/scalable,emblems/scalable,places/scalable,status/16,status/22
 
 [actions/scalable]
-Size=8
+Size=16
 MinSize=8
 MaxSize=256
 Context=Actions
 Type=Scalable
 
 [emblems/scalable]
-Size=8
+Size=16
 MinSize=8
 MaxSize=256
 Context=Emblems
 Type=Scalable
 
 [places/scalable]
-Size=8
+Size=16
 MinSize=8
 MaxSize=256
 Context=Places
 Type=Scalable
 
-[status/scalable]
-Size=8
+[status/16]
+Size=16
+MinSize=8
+MaxSize=256
+Context=Status
+Type=Scalable
+
+[status/22]
+Size=22
 MinSize=8
 MaxSize=256
 Context=Status
