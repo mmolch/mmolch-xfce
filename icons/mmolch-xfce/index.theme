@@ -32,12 +32,12 @@ Size=16
 MinSize=8
 MaxSize=256
 Context=Status
-Type=Scalable
+Type=Fixed
 
 [status/22]
 Size=22
 MinSize=8
 MaxSize=256
 Context=Status
-Type=Scalable
+Type=Fixed
 
