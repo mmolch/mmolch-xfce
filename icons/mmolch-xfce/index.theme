@@ -4,7 +4,7 @@ Comment=
 Inherits=breeze,Yaru,ubuntu-mono-light,Humanity,elementary-xfce,Adwaita,hicolor
 Example=folder
 
-Directories=actions/scalable,emblems/scalable
+Directories=actions/scalable,emblems/scalable,places/scalable,status/scalable
 
 [actions/scalable]
 Size=8
@@ -18,5 +18,19 @@ Size=8
 MinSize=8
 MaxSize=256
 Context=Emblems
+Type=Scalable
+
+[places/scalable]
+Size=8
+MinSize=8
+MaxSize=256
+Context=Places
+Type=Scalable
+
+[status/scalable]
+Size=8
+MinSize=8
+MaxSize=256
+Context=Status
 Type=Scalable
 
