@@ -6164,8 +6164,8 @@ window.xfce4-panel widget.tasklist > button > box > label {
 }
 
 .xfce4-panel.background .tasklist > button > * {
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 6px;
+  margin-right: 6px;
   padding-top: 2px;
 }
 
@@ -6184,8 +6184,8 @@ window.xfce4-panel widget.tasklist > button > box > label {
  * Launchers *
  ****************/
 .xfce4-panel.background button#launcher-arrow > * {
-  padding-left: 7px;
-  padding-right: 7px;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 .xfce4-panel.background button#indicator-button {
