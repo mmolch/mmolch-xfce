@@ -6207,12 +6207,12 @@ window.xfce4-panel > widget > widget > #showdesktop-button {
   border: 0;
   padding: 0;
   margin: 0;
-  background-color: rgba(0,0,0,0.28);
+  background-color: rgba(0,0,0,0.21);
   border-left: 1px solid rgba(255,255,255,0.7);
 }
 
 window.xfce4-panel > widget > widget > #showdesktop-button:hover {
-  background-color: rgba(0,0,0,0.35);
+  background-color: rgba(0,0,0,0.28);
 }
 
 window.xfce4-panel > widget > widget > #showdesktop-button:checked {

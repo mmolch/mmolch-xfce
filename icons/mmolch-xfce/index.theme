@@ -1,6 +1,6 @@
 [Icon Theme]
 Name=mmolch-xfce
-Comment=
+Comment=Mimetype, action, window and panel icons (mainly from Yaru icon theme)
 Inherits=breeze,Yaru,Humanity,Adwaita,hicolor
 Example=folder
 
