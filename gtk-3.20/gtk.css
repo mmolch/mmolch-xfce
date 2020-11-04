@@ -507,7 +507,7 @@ button {
     color: #3D3D3D;
     outline-color: rgba(97, 176, 239, 0.7);
     border-color: #c4c4c4;
-    border-bottom: 1px solid #9aa4ae;
+    /*border-bottom: 1px solid #9aa4ae;*/
     background-image: image(white);}
   notebook > header > tabs > arrow:active, notebook > header > tabs > arrow:checked,
   button:active,
