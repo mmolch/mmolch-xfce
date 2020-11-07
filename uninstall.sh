@@ -29,8 +29,8 @@ fi
 echo -e 'Press Ctrl-C to abort or enter to continue'
 read xxx
 
-[ -d "${THEMES_DIR}/mmolch-xfce" ] && mkdir -p "${THEMES_DIR}/mmolch-xfce" 
-[ -d "${THEMES_DIR}/mmolch-xfce (xhdpi)" ] && mkdir -p "${THEMES_DIR}/mmolch-xfce (xhdpi)"
-[ -d "${ICONS_DIR}/mmolch-xfce" ] && mkdir -p "${ICONS_DIR}/mmolch-xfce"
+[ -d "${THEMES_DIR}/mmolch-xfce" ] && rm -rf "${THEMES_DIR}/mmolch-xfce" 
+[ -d "${THEMES_DIR}/mmolch-xfce (xhdpi)" ] && rm -rf "${THEMES_DIR}/mmolch-xfce (xhdpi)"
+[ -d "${ICONS_DIR}/mmolch-xfce" ] && rm -rf "${ICONS_DIR}/mmolch-xfce"
 
 echo 'Finished.'
