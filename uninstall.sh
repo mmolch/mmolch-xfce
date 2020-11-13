@@ -11,7 +11,7 @@ if [ "x$USER" = "xroot" ]; then
 fi
 
 cat <<eof
-This will remove the following directories:
+The following directories will be removed:
   ${THEMES_DIR}/mmolch-xfce
   ${THEMES_DIR}/mmolch-xfce (xhdpi)
   ${ICONS_DIR}/mmolch-xfce
@@ -31,4 +31,3 @@ read xxx
 [ -d "${ICONS_DIR}/mmolch-xfce" ] && rm -rf "${ICONS_DIR}/mmolch-xfce"
 
 echo 'Finished.'
-
