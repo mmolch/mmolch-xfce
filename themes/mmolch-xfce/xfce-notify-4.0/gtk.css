@@ -3,18 +3,7 @@
     border-radius: 1px;
 }
 
-#XfceNotifyWindow button {
-}
-
 #XfceNotifyWindow label#summary {
     font-weight: bold;
 }
 
-#XfceNotifyWindow progressbar {
-}
-
-#XfceNotifyWindow progressbar progress {
-}
-
-#XfceNotifyWindow progressbar trough {
-}
