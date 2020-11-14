@@ -2,10 +2,19 @@
 
 # arg1: Source directory
 # arg2: Target directory
+# example: install_directory source/files target/files
 install_directory() {
-    cp -r "${1}" "${2}" && \
-        find "${2}" -type d -exec chmod 0755 {} \; && \
-        find "${2}" -type f -exec chmod 0644 {} \;
+    [ ! -d "${1}" ] && return # Source directory doesn't exist
+    [ ! -d "${2}" ] && mkdir -m 0755 -p "${2}"
+    [ ! -d "${2}" ] && return # Failed to create target directory
+
+    while IFS= read -r path; do
+        mkdir -m 0755 -p "${2}/${path}"
+    done <<<$(find "${1}" -type d -printf '%P\n')
+
+    while IFS= read -r path; do
+        install -m 0644 "${1}/${path}" "${2}/${path}"
+    done <<<$(find "${1}" -type f -printf '%P\n')
 }
 
 ScriptDir=$(readlink -f "${BASH_SOURCE%/*}")
@@ -52,8 +61,10 @@ Some notes / recommendations for this theme:
   * Make sure that the breeze icon theme is installed (package breeze-icon-theme in Ubuntu)
   * Window Manager
     * Disable compositing (Client side window decorated windows and menus have round borders and shadows otherwise)
-  * Button icons can be removed via Appearance -> Settings -> Show images on buttons
-  * Font: Noto Sans Display Regular with a font size of 9 and full hinting
+    * Font: Noto Sans Display Medium (font size 9)
+  * Appearance
+    * Button icons can be removed via Appearance -> Settings -> Show images on buttons
+    * Font: Noto Sans Display Regular with a font size of 9 and full hinting
   * Panel
     * Height: 30px
     * Icon Size: 16px (Needs to be set separately in the Panel Preferences, Status Notifier Plugin and Notification Area)
@@ -65,4 +76,3 @@ Some notes / recommendations for this theme:
     * Set Application icon size and category icon size to "Very Small"
 
 eof
-
