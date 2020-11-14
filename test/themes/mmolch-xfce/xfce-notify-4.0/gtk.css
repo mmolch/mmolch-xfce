@@ -1,9 +1,0 @@
-#XfceNotifyWindow {
-    border: 1px solid #c4c4c4;
-    border-radius: 1px;
-}
-
-#XfceNotifyWindow label#summary {
-    font-weight: bold;
-}
-
