@@ -14,9 +14,11 @@ To uninstall the theme, run the script *uninstall.sh* either as user or with ele
 ## Some notes / recommendations for this theme
   * Make sure that the breeze icon theme is installed (package breeze-icon-theme in Ubuntu)
   * Window Manager
-    * Disable compositing (Client side windows and menus have round borders and shadows otherwise)
-  * Button icons can be removed via *Appearance -> Settings -> Show images on buttons*
-  * Font: *Noto Sans Display Regular* with a font size of 9 and full hinting
+    * Disable compositing (Client side window decorated windows and menus have round borders and shadows otherwise)
+    * Font: Noto Sans Display Medium (font size 9)
+  * Appearance
+    * Button icons can be removed via *Appearance -> Settings -> Show images on buttons*
+    * Font: *Noto Sans Display Regular* (font size of 9, full hinting)
   * Panel
     * Height: 30px
     * Icon Size: 16px (Needs to be set separately for the *Panel Preferences*, *Status Notifier Plugin* and *Notification Area*)
