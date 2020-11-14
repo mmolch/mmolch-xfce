@@ -8,13 +8,23 @@ install_directory() {
     [ ! -d "${2}" ] && mkdir -m 0755 -p "${2}"
     [ ! -d "${2}" ] && return # Failed to create target directory
 
+    # directories
     while IFS= read -r path; do
+        [ -z "${path}" ] && continue
         mkdir -m 0755 -p "${2}/${path}"
     done <<<$(find "${1}" -type d -printf '%P\n')
 
+    # files
     while IFS= read -r path; do
+        [ -z "${path}" ] && continue
         install -m 0644 "${1}/${path}" "${2}/${path}"
     done <<<$(find "${1}" -type f -printf '%P\n')
+
+    # symlinks
+    while IFS= read -r path; do
+        [ -z "${path}" ] && continue
+        cp -PT "${1}/${path}" "${2}/${path}"
+    done <<<$(find "${1}" -type l -printf '%P\n')
 }
 
 ScriptDir=$(readlink -f "${BASH_SOURCE%/*}")
