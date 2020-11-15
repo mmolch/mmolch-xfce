@@ -79,7 +79,7 @@ Some notes / recommendations for this theme:
     * Font: Noto Sans Display Medium (font size 9)
   * Appearance
     * Button icons can be removed via Appearance -> Settings -> Show images on buttons
-    * Font: Noto Sans Display Regular with a font size of 9 and full hinting
+    * Font: Noto Sans Display Regular (font size 9, full hinting)
   * Panel
     * Height: 30px
     * Icon Size: 16px (Needs to be set separately in the Panel Preferences, Status Notifier Plugin and Notification Area)
