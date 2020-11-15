@@ -2,29 +2,32 @@
 
 # arg1: Source directory
 # arg2: Target directory
-# example: install_directory source/files target/files
+# returns 1 on error
+# example: install_directory dist/data /usr/share/myapp || failed
 install_directory() {
-    [ ! -d "${1}" ] && return # Source directory doesn't exist
-    [ ! -d "${2}" ] && mkdir -m 0755 -p "${2}"
-    [ ! -d "${2}" ] && return # Failed to create target directory
+    [ ! -d "${1}" ] && return 1 # Source doesn't exist or isn't a directory
 
     # directories
     while IFS= read -r path; do
-        [ -z "${path}" ] && continue
-        mkdir -m 0755 -p "${2}/${path}"
+        [ ! -d "${2}/${path}" ] && mkdir -m 0755 -p "${2}/${path}" || return 1
     done <<<$(find "${1}" -type d -printf '%P\n')
 
     # files
     while IFS= read -r path; do
         [ -z "${path}" ] && continue
-        install -m 0644 "${1}/${path}" "${2}/${path}"
+        install -m 0644 "${1}/${path}" "${2}/${path}" || return 1
     done <<<$(find "${1}" -type f -printf '%P\n')
 
     # symlinks
     while IFS= read -r path; do
         [ -z "${path}" ] && continue
-        cp -PT "${1}/${path}" "${2}/${path}"
+        cp -fPT "${1}/${path}" "${2}/${path}" || return 1
     done <<<$(find "${1}" -type l -printf '%P\n')
+}
+
+install_failed() {
+  echo -e '\nInstallation failed. Do you have write permissions on the directories or maybe is your dik full?'
+  exit 1
 }
 
 ScriptDir=$(readlink -f "${BASH_SOURCE%/*}")
@@ -55,13 +58,11 @@ echo -e 'Press Ctrl-C to abort or enter to continue'
 read xxx
 
 echo 'Installing theme ...'
-[ ! -d "${THEMES_DIR}" ] && mkdir -p "${THEMES_DIR}"
-install_directory "${ScriptDir}/themes/mmolch-xfce" "${THEMES_DIR}/mmolch-xfce"
-install_directory "${ScriptDir}/themes/mmolch-xfce (xhdpi)" "${THEMES_DIR}/mmolch-xfce (xhdpi)"
+install_directory "${ScriptDir}/themes/mmolch-xfce" "${THEMES_DIR}/mmolch-xfce" || install_failed
+install_directory "${ScriptDir}/themes/mmolch-xfce (xhdpi)" "${THEMES_DIR}/mmolch-xfce (xhdpi)" || install_failed
 
 echo 'Installing icons ...'
-[ ! -d "${ICONS_DIR}" ] && mkdir -p "${ICONS_DIR}"
-install_directory "${ScriptDir}/icons/mmolch-xfce" "${ICONS_DIR}/mmolch-xfce"
+install_directory "${ScriptDir}/icons/mmolch-xfce" "${ICONS_DIR}/mmolch-xfce" || install_failed
 
 cat <<eof
 
