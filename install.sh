@@ -75,7 +75,7 @@ cat <<eof
 Some notes / recommendations for this theme:
   * Make sure that the breeze icon theme is installed (package breeze-icon-theme in Ubuntu)
   * Window Manager
-    * Disable compositing (Client side window decorated windows and menus have round borders and shadows otherwise)
+    * Disable compositing (Client side decorated windows and menus have round borders and shadows otherwise)
     * Font: Noto Sans Display Medium (font size 9)
   * Appearance
     * Button icons can be removed via Appearance -> Settings -> Show images on buttons
