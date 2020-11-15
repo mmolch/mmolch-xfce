@@ -1,5 +1,10 @@
 #!/bin/bash
 
+RED='\033[0;31m'
+GREEN='\033[1;32m'
+YELLOW='\033[1;33m'
+NC='\033[0m'
+
 ROOT_INSTALL=0
 THEMES_DIR="${HOME}/.themes"
 ICONS_DIR="${HOME}/.icons"
@@ -30,4 +35,4 @@ read xxx
 [ -d "${THEMES_DIR}/mmolch-xfce (xhdpi)" ] && rm -rf "${THEMES_DIR}/mmolch-xfce (xhdpi)"
 [ -d "${ICONS_DIR}/mmolch-xfce" ] && rm -rf "${ICONS_DIR}/mmolch-xfce"
 
-echo 'Finished.'
+echo -e "${GREEN}Finished.${NC}"

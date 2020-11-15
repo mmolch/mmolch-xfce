@@ -1,5 +1,10 @@
 #!/bin/bash
 
+RED='\033[0;31m'
+GREEN='\033[1;32m'
+YELLOW='\033[1;33m'
+NC='\033[0m'
+
 # arg1: Source directory
 # arg2: Target directory
 # returns 1 on error
@@ -9,7 +14,7 @@ install_directory() {
 
     # directories
     while IFS= read -r path; do
-        [ ! -d "${2}/${path}" ] && mkdir -m 0755 -p "${2}/${path}" || return 1
+        [ -d "${2}/${path}" ] || mkdir -m 0755 -p "${2}/${path}" || return 1
     done <<<$(find "${1}" -type d -printf '%P\n')
 
     # files
@@ -26,7 +31,7 @@ install_directory() {
 }
 
 install_failed() {
-  echo -e '\nInstallation failed. Do you have write permissions on the directories or maybe is your dik full?'
+  echo -e "\n${RED}Installation failed.${NC}"
   exit 1
 }
 
@@ -57,17 +62,16 @@ fi
 echo -e 'Press Ctrl-C to abort or enter to continue'
 read xxx
 
-echo 'Installing theme ...'
+echo -e "${NC}Installing theme ...${YELLOW}"
 install_directory "${ScriptDir}/themes/mmolch-xfce" "${THEMES_DIR}/mmolch-xfce" || install_failed
 install_directory "${ScriptDir}/themes/mmolch-xfce (xhdpi)" "${THEMES_DIR}/mmolch-xfce (xhdpi)" || install_failed
 
-echo 'Installing icons ...'
+echo -e "${NC}Installing icons ...${YELLOW}"
 install_directory "${ScriptDir}/icons/mmolch-xfce" "${ICONS_DIR}/mmolch-xfce" || install_failed
 
+echo -e "\n${GREEN}Finished.${NC}\n"
+
 cat <<eof
-
-Finished.
-
 Some notes / recommendations for this theme:
   * Make sure that the breeze icon theme is installed (package breeze-icon-theme in Ubuntu)
   * Window Manager
