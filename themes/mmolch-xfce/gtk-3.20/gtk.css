@@ -6070,20 +6070,30 @@ window.xfce4-panel > widget > widget > * > button:hover:checked {
   transition: all 150ms ease-out;
 }
 
+/****************
+ * Actions      *
+ ****************/
+ window.xfce4-panel button#actions-button > label {
+   margin-left: 6px;
+   margin-right: 6px;
+ }
 
 /****************
  * whisker menu *
  ****************/
 window.xfce4-panel button#whiskermenu-button {
+  margin: 0;
 }
 
 window.xfce4-panel button#whiskermenu-button > box {
+  margin-left: 4px;
+  margin-right: 4px;
 }
 
-window.xfce4-panel button#whiskermenu-button > box > image {
-}
-
+window.xfce4-panel button#whiskermenu-button > box > image,
 window.xfce4-panel button#whiskermenu-button > box > label {
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
 window#whiskermenu-window button {
@@ -6328,6 +6338,25 @@ window.xfce4-panel button#pulseaudio-button:checked {
 }
 
 window.xfce4-panel button#pulseaudio-button > image {
+}
+
+/****************
+ * Application Menu Button *
+ ****************/
+ window.xfce4-panel button#applicationmenu-button {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+ window.xfce4-panel button#applicationmenu-button > box {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+window.xfce4-panel button#applicationmenu-button > box > image,
+window.xfce4-panel button#applicationmenu-button > box > label {
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
 window.xfce4-panel > widget > widget#separator-1,
