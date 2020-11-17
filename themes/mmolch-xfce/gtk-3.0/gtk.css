@@ -6468,7 +6468,6 @@ read if you used those and something break with a version upgrade you're on your
 @define-color wm_button_active_color_c shade(#F5F6F7, 0.9);
 @define-color content_view_bg #FFFFFF;
 
-
 window.xfce4-panel {
   background: rgba(244, 244, 244, 0.95);
 }
@@ -6510,7 +6509,7 @@ window.xfce4-panel > widget > widget > * > button {
   min-width: 2px;
   border-bottom: 2px solid transparent;
   background-image: none;
-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
   color: @theme_fg_color;
   background-color: rgba(0,0,0,0);
   background: rgba(0,0,0,0);
@@ -6659,7 +6658,7 @@ window.xfce4-panel widget.tasklist > button > box > label {
 
 
 
-.xfce4-panel.background .tasklist > button {
+.xfce4-panel.background widget.tasklist > button {
   padding: 0;
   margin-left: 1px;
   margin-right: 0;
@@ -6668,13 +6667,23 @@ window.xfce4-panel widget.tasklist > button > box > label {
   border-bottom: 2px solid #898989;
 }
 
-.xfce4-panel.background .tasklist > button > * {
-  margin-left: 6px;
-  margin-right: 6px;
-  padding-top: 2px;
+.xfce4-panel.background widget.tasklist > button * {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.xfce4-panel.background .tasklist > button:hover {
+.xfce4-panel.background widget.tasklist > button > box {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.xfce4-panel.background widget.tasklist > button > box > label {
+  margin-left: -2px;
+}
+
+.xfce4-panel.background widget.tasklist > button:hover {
   border-bottom: 2px solid @theme_selected_bg_color;
 }
 
