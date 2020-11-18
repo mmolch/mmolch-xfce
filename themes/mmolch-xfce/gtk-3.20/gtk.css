@@ -6480,3 +6480,28 @@ window.xfce4-panel > widget > widget > button#clock-button > label {
   padding-right: 8px;
 }
 
+calendar {
+  background-color: @theme_bg_color;
+  color: @theme_fg_color;
+  font-size: 1.1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  top: 10px;
+}
+
+calendar.view {
+  background-color: @theme_bg_color;
+  color: @theme_fg_color;
+  border: 1px solid #c4c4c4;
+}
+
+calendar.header {
+  border: 0;
+}
+
+calendar:selected {
+  border-radius: 9999px;
+  color: @theme_fg_color_highlight;
+}
