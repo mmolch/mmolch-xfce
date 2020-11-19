@@ -6235,20 +6235,25 @@ window.xfce4-panel > widget > widget > #showdesktop-button {
   border: 0;
   padding: 0;
   margin: 0;
-  background-color: rgba(0,0,0,0.21);
-  border-left: 1px solid rgba(255,255,255,0.7);
+  margin-left: 1px;
+  border-left: 1px solid transparent;
+  background-color: rgba(0,0,0,0.14);
+  box-shadow: none;
 }
 
 window.xfce4-panel > widget > widget > #showdesktop-button:hover {
   background-color: rgba(0,0,0,0.28);
+  box-shadow: none;
 }
 
 window.xfce4-panel > widget > widget > #showdesktop-button:checked {
-  background-color: rgba(32, 143, 233, 0.8);
+  background-color: rgba(0, 111, 201, 0.6);
+  box-shadow: none;
 }
 
 window.xfce4-panel > widget > widget > #showdesktop-button:checked:hover {
-  background-color: rgba(32, 143, 233, 0.9);
+  background-color: rgba(0, 111, 201, 0.7);
+  box-shadow: none;
 }
 
 
