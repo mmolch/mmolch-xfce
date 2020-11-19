@@ -93,5 +93,7 @@ Some notes / recommendations for this theme:
     * Enable "Position search entry next to panel putton"
     * Enable "Position commands next to search entry"
     * Set Application icon size and category icon size to "Very Small"
+  * Desktop
+    * Background: ${THEMES_DIR}/mmolch-xfce/wallpapers/The-rendezvous_peppercarrot-wallpaper_by-David-Revoy.jpg
 
 eof

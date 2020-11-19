@@ -28,7 +28,9 @@ To uninstall the theme, run the script *uninstall.sh* either as user or with ele
     * Enable *Position search entry next to panel putton*
     * Enable *Position commands next to search entry*
     * Set Application icon size and category icon size to *Very Small*
+  * Desktop
+    * Background: *The-rendezvous_peppercarrot-wallpaper_by-David-Revoy.jpg* (full path shown during installation)
 
 
 ## Thanks
-I want to sincerely thank all the amazing people who are working on Adwaita, Breeze, Yaru and the other themes that are used by this theme directly or indirectly.
+I want to sincerely thank all the amazing people who are working on Adwaita, Breeze, Yaru and the other themes that are used by this theme directly or indirectly and David Revoy for the beautiful wallpaper (check out *https://peppercarrot.com*).
