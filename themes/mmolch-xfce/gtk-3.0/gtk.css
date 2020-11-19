@@ -6984,7 +6984,7 @@ window.xfce4-panel > widget > widget > button#clock-button > label {
 calendar {
   background-color: @theme_bg_color;
   color: @theme_fg_color;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   padding-left: 0.2rem;
   padding-right: 0.2rem;
   padding-top: 0.1rem;
