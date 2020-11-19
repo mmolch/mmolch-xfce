@@ -6054,8 +6054,16 @@ window.xfce4-panel > widget > widget > button:active,
 window.xfce4-panel > widget > widget > * > button:active {
   border-radius: 0;
   transition: all 150ms ease-out;
-  border-bottom: 2px solid @theme_selected_bg_color;
+  border-bottom: 2px solid #f87b18;
   background-color: rgba(0,0,0,0);
+  background-image: image(rgba(0,0,0,0.14));
+}
+
+window.xfce4-panel > widget > widget > box > widget.tasklist > button:active:hover,
+window.xfce4-panel > widget > button:active:hover,
+window.xfce4-panel > widget > widget > button:active:hover,
+window.xfce4-panel > widget > widget > * > button:active:hover {
+  border-bottom: 2px solid @theme_selected_bg_color;
   background-image: image(rgba(0,0,0,0.14));
 }
 
