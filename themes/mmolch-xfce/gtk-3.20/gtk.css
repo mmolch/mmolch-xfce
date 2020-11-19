@@ -6016,7 +6016,6 @@ window.xfce4-panel > widget > widget > * > button {
   transition: all 150ms ease-out;
   color: @theme_fg_color;
   background-color: rgba(0,0,0,0);
-  background-image: image(rgba(0,0,0,0));
 }
 
 window.xfce4-panel > widget > widget > box > widget.tasklist > button > *,
@@ -6491,8 +6490,8 @@ calendar {
   background-color: @theme_bg_color;
   color: @theme_fg_color;
   font-size: 1.2rem;
-  padding-left: 0.4rem;
-  padding-right: 0.4rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
   padding-top: 0.1rem;
   padding-bottom: 0.1rem;
 }
