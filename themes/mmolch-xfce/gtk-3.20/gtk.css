@@ -6054,9 +6054,9 @@ window.xfce4-panel > widget > widget > button:active,
 window.xfce4-panel > widget > widget > * > button:active {
   border-radius: 0;
   transition: all 150ms ease-out;
-  border-bottom: 2px solid #f87b18;
+  border-bottom: 2px solid #d46914;
   background-color: rgba(0,0,0,0);
-  background-image: image(rgba(0,0,0,0.14));
+  background-image: image(rgba(0,0,0,0.07));
 }
 
 window.xfce4-panel > widget > widget > box > widget.tasklist > button:active:hover,
@@ -6490,7 +6490,7 @@ window.xfce4-panel > widget > widget > button#clock-button > label {
 calendar {
   background-color: @theme_bg_color;
   color: @theme_fg_color;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   padding-left: 0.2rem;
   padding-right: 0.2rem;
   padding-top: 0.1rem;
