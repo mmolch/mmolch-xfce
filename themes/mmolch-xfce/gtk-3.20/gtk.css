@@ -6012,18 +6012,17 @@ window.xfce4-panel > widget > widget > * > button {
   padding: 0;
   min-height: 2px;
   min-width: 2px;
-  border-bottom: 2px solid transparent;
   transition: all 150ms ease-out;
   color: @theme_fg_color;
   background-color: rgba(0,0,0,0);
   background-image: none;
+  box-shadow: inset 0 -2px transparent;
 }
 
 window.xfce4-panel > widget > widget > box > widget.tasklist > button > *,
 window.xfce4-panel > widget > button > *,
 window.xfce4-panel > widget > widget > button > *,
 window.xfce4-panel > widget > widget > * > button > * {
-  padding-top: 2px;
 }
 
 window.xfce4-panel > widget > widget > box > widget.tasklist > button:checked,
@@ -6031,10 +6030,10 @@ window.xfce4-panel > widget > button:checked,
 window.xfce4-panel > widget > widget > button:checked,
 window.xfce4-panel > widget > widget > * > button:checked {
   border-radius: 0;
-  border-bottom: 2px solid @theme_selected_bg_color;
   background-color: rgba(0,0,0,0.14);
   background-image: none;
   transition: all 150ms ease-out;
+  box-shadow: inset 0 -2px @theme_selected_bg_color;
 }
 
 window.xfce4-panel > widget > widget > box > widget.tasklist > button:hover,
@@ -6042,10 +6041,10 @@ window.xfce4-panel > widget > button:hover,
 window.xfce4-panel > widget > widget > button:hover,
 window.xfce4-panel > widget > widget > * > button:hover {
   border-radius: 0;
-  border-bottom: 2px solid @theme_selected_bg_color;
   background-color: rgba(0,0,0,0.07);
   background-image: none;
   transition: all 150ms ease-out;
+  box-shadow: inset 0 -2px @theme_selected_bg_color;
 }
 
 window.xfce4-panel > widget > widget > box > widget.tasklist > button:active,
@@ -6054,17 +6053,18 @@ window.xfce4-panel > widget > widget > button:active,
 window.xfce4-panel > widget > widget > * > button:active {
   border-radius: 0;
   transition: all 150ms ease-out;
-  border-bottom: 2px solid #d46914;
   background-color: rgba(0,0,0,0);
-  background-image: image(rgba(0,0,0,0.07));
+  background-image: image(rgba(0,0,0,0.14));
+  /*box-shadow: inset 0 -2px #d46914;*/
+  box-shadow: inset 0 -2px @theme_selected_bg_color;
 }
 
 window.xfce4-panel > widget > widget > box > widget.tasklist > button:active:hover,
 window.xfce4-panel > widget > button:active:hover,
 window.xfce4-panel > widget > widget > button:active:hover,
 window.xfce4-panel > widget > widget > * > button:active:hover {
-  border-bottom: 2px solid @theme_selected_bg_color;
   background-image: image(rgba(0,0,0,0.14));
+  box-shadow: inset 0 -2px @theme_selected_bg_color;
 }
 
 window.xfce4-panel > widget > widget > box > widget.tasklist > button:hover:checked,
@@ -6072,10 +6072,10 @@ window.xfce4-panel > widget > button:hover:checked,
 window.xfce4-panel > widget > widget > button:hover:checked,
 window.xfce4-panel > widget > widget > * > button:hover:checked {
   border-radius: 0;
-  border-bottom: 2px solid @theme_selected_bg_color;
   background-color: rgba(0,0,0,0.21);
   background-image: none;
   transition: all 150ms ease-out;
+  box-shadow: inset 0 -2px @theme_selected_bg_color;
 }
 
 /****************
@@ -6178,7 +6178,6 @@ window.xfce4-panel widget.tasklist > button > box > label {
   margin-right: 0;
   border: 0;
   border-radius: 0;
-  border-bottom: 2px solid #898989;
 }
 
 .xfce4-panel.background widget.tasklist > button * {
@@ -6198,11 +6197,11 @@ window.xfce4-panel widget.tasklist > button > box > label {
 }
 
 .xfce4-panel.background widget.tasklist > button:hover {
-  border-bottom: 2px solid @theme_selected_bg_color;
+
 }
 
 .xfce4-panel.background .tasklist > button:checked {
-  border-bottom: 2px solid @theme_selected_bg_color;
+
 }
 
 .xfce4-panel.background .tasklist > button > * > label {
@@ -6331,15 +6330,9 @@ window.xfce4-panel button#sn-button > widget#sn-button-box {
 }
 
 window.xfce4-panel button#sn-button > widget#sn-button-box > image {
-  padding-top: 2px;
-  -gtk-icon-style: symbolic;
-  -gtk-icon-palette: warning rgb(61,61,61), success rgb(61,61,61), error rgb(61,61,61);
-  -gtk-icon-effect: none;
 }
 
 window.xfce4-panel button#sn-button:hover > widget#sn-button-box > image {
-  transition: all 150ms ease-out;
-  border-bottom: 1px solid @theme_selected_bg_color;
 }
 
 /****************
