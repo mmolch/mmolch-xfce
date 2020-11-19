@@ -6509,6 +6509,8 @@ window.xfce4-panel > widget > widget > * > button {
   border-bottom: 2px solid transparent;
   transition: all 150ms ease-out;
   color: @theme_fg_color;
+  background-color: rgba(0,0,0,0);
+  background-image: image(rgba(0,0,0,0.14));
 }
 
 window.xfce4-panel > widget > widget > box > widget.tasklist > button > *,
