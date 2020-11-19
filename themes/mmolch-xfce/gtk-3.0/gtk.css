@@ -6984,8 +6984,8 @@ calendar {
   background-color: @theme_bg_color;
   color: @theme_fg_color;
   font-size: 1.2rem;
-  padding-left: 0.2rem;
-  padding-right: 0.2rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
   padding-top: 0.1rem;
   padding-bottom: 0.1rem;
 }
@@ -7001,6 +7001,5 @@ calendar.header {
 }
 
 calendar:selected {
-  border-radius: 9999px;
-  color: @theme_fg_color_highlight;
+  border-radius: 3px;
 }
