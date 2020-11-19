@@ -6004,7 +6004,6 @@ window.xfce4-panel > widget > widget > * > button {
   outline: none;
   -gtk-icon-effect: none;
   -gtk-icon-shadow: none;
-  background-image: none;
   text-shadow: none;
   box-shadow: none;
   border-radius: 0;
@@ -6014,11 +6013,8 @@ window.xfce4-panel > widget > widget > * > button {
   min-height: 2px;
   min-width: 2px;
   border-bottom: 2px solid transparent;
-  background-image: none;
   transition: all 150ms ease-out;
   color: @theme_fg_color;
-  background-color: rgba(0,0,0,0);
-  background: rgba(0,0,0,0);
 }
 
 window.xfce4-panel > widget > widget > box > widget.tasklist > button > *,
@@ -6055,8 +6051,8 @@ window.xfce4-panel > widget > button:active,
 window.xfce4-panel > widget > widget > button:active,
 window.xfce4-panel > widget > widget > * > button:active {
   border-radius: 0;
-  background-image: none;
   transition: all 150ms ease-out;
+  border-bottom: 2px solid @theme_selected_bg_color;
 }
 
 window.xfce4-panel > widget > widget > box > widget.tasklist > button:hover:checked,
