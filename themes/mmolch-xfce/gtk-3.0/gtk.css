@@ -6750,7 +6750,6 @@ window.xfce4-panel > widget > widget > #showdesktop-button > image {
   border: 0;
   padding: 0;
   margin: 0;
-  -gtk-icon-style: symbolic;
 }
 
 window.xfce4-panel > widget > widget > #showdesktop-button:hover > image {
