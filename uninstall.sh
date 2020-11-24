@@ -5,6 +5,7 @@ COLOR_GREEN='\033[1;32m'
 COLOR_YELLOW='\033[1;33m'
 COLOR_DEFAULT='\033[0m'
 
+ROOT_INSTALL=0
 THEMES_DIR="${HOME}/.themes"
 ICONS_DIR="${HOME}/.icons"
 
@@ -13,7 +14,7 @@ error() {
     exit 1
 }
 
-if [ ${UID} -eq 0 ]; then
+if [ "$(id -u)" -eq 0 ]; then
     ROOT_INSTALL=1
     THEMES_DIR='/usr/share/themes'
     ICONS_DIR='/usr/share/icons'
@@ -26,7 +27,7 @@ The following directories will be removed:
   ${ICONS_DIR}/mmolch-xfce
 eof
 
-if [ ${UID} -eq 0 ]; then
+if [ "${ROOT_INSTALL}" -eq 1 ]; then
     echo -e '\nIf you installed the theme only for you, run this script as user'
 else
     echo -e '\nIf you installed the theme for all users, run this script with root privileges'

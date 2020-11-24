@@ -41,10 +41,12 @@ install_failed() {
 
 ScriptDir=$(readlink -f "${BASH_SOURCE%/*}")
 
+ROOT_INSTALL=0
 THEMES_DIR="${HOME}/.themes"
 ICONS_DIR="${HOME}/.icons"
 
-if [ ${UID} -eq 0 ]; then
+if [ "$(id -u)" -eq 0 ]; then
+    ROOT_INSTALL=1
     THEMES_DIR='/usr/share/themes'
     ICONS_DIR='/usr/share/icons'
 fi
@@ -57,7 +59,7 @@ mmolch-xfce will be installed in the following directories:
   ${ICONS_DIR}
 eof
 
-if [ ${UID} -eq 0 ]; then
+if [ "${ROOT_INSTALL}" -eq 1 ]; then
     echo -e '\nIf you want to install the theme only for you, run this script as user'
 else
     echo -e '\nIf you want to install the theme for all users, run this script with root privileges'    
