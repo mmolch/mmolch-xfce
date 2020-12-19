@@ -1,9 +1,9 @@
 #!/bin/bash
 
-RED='\033[0;31m'
-GREEN='\033[1;32m'
-YELLOW='\033[1;33m'
-NC='\033[0m'
+COLOR_RED='\033[0;31m'
+COLOR_GREEN='\033[1;32m'
+COLOR_YELLOW='\033[1;33m'
+COLOR_DEFAULT='\033[0m'
 
 print_banner() {
   base64 -d <<<'ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgX18gICAgIF9fICAgICAgICAgICAgICAgX19fXwogICBfX19fIF9fXyAgX19fXyBfX18gIF9fX18gIC8gL19fX18vIC9fICAgICAgICBfICBfXy8gX18vX19fX19fXwogIC8gX18gYF9fIFwvIF9fIGBfXyBcLyBfXyBcLyAvIF9fXy8gX18gXF9fX19fX3wgfC9fLyAvXy8gX19fLyBfIFwKIC8gLyAvIC8gLyAvIC8gLyAvIC8gLyAvXy8gLyAvIC9fXy8gLyAvIC9fX19fXy8+ICA8LyBfXy8gL19fLyAgX18vCi9fLyAvXy8gL18vXy8gL18vIC9fL1xfX19fL18vXF9fXy9fLyAvXy8gICAgIC9fL3xfL18vICBcX19fL1xfX18vCgoK' 2>/dev/null
@@ -35,7 +35,7 @@ install_directory() {
 }
 
 install_failed() {
-  echo -e "\n${RED}Installation failed.${NC}"
+  echo -e "\n${RED}Installation failed.${COLOR_DEFAULT}"
   exit 1
 }
 
@@ -68,14 +68,14 @@ fi
 echo -e 'Press Ctrl-C to abort or enter to continue'
 read xxx
 
-echo -e "${NC}Installing theme ...${YELLOW}"
+echo -e "${COLOR_DEFAULT}Installing theme ...${COLOR_YELLOW}"
 install_directory "${ScriptDir}/themes/mmolch-xfce" "${THEMES_DIR}/mmolch-xfce" || install_failed
 install_directory "${ScriptDir}/themes/mmolch-xfce (xhdpi)" "${THEMES_DIR}/mmolch-xfce (xhdpi)" || install_failed
 
-echo -e "${NC}Installing icons ...${YELLOW}"
+echo -e "${COLOR_DEFAULT}Installing icons ...${COLOR_YELLOW}"
 install_directory "${ScriptDir}/icons/mmolch-xfce" "${ICONS_DIR}/mmolch-xfce" || install_failed
 
-echo -e "\n${GREEN}Finished.${NC}\n"
+echo -e "\n${COLOR_GREEN}Finished.${COLOR_DEFAULT}\n"
 
 cat <<eof
 Some notes / recommendations for this theme:
